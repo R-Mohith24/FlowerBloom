@@ -1,0 +1,62 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #1f1f1f !important;  /* Dark background */
+  border-bottom: 1px solid #333;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #cccccc !important;
+}
+
+.navbar-nav .nav-link {
+  color: #dddddd !important;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+/* Highlight the active nav link */
+.navbar-nav .nav-link.active {   /* Light grey background */
+  color: #f1eaea !important;   /* Dark text */
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+
+.navbar-toggler {
+  border: none;
+  background-color: #333333;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath d='M4 7h22v2H4zM4 15h22v2H4zM4 23h22v2H4z'/%3E%3C/svg%3E");
+}
+
+.form-control {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn-outline-success {
+  color: #ffffff;
+  border-color: #555;
+}
+
+.btn-outline-success:hover {
+  background-color: #444;
+  color: #ffffff;
+  border-color: #666;
+}
