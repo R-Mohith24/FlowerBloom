@@ -1,7 +1,12 @@
 import React from 'react'
 import './Home.css'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate()
+  const navigateToShopHere = () => {
+    navigate('/Gallery')
+  }
   return (
     <>
     <div className="Home_container">
@@ -10,7 +15,7 @@ const Home = () => {
         <p>Where you can find the best flowers for your special occasions
           and bloom your life with it 
         </p>
-        <button className="shop-button">SHOP HERE!</button>
+        <button className="shop-button" onClick={() => navigateToShopHere()}>SHOP HERE!</button>
       </div>
     </div>
     </>
