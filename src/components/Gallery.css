@@ -1,8 +1,10 @@
 .gallery-container {
   padding: 40px 20px;
-  background-color: #201f20; /* Dark background for contrast */
+  background-color: rgba(205, 126, 191, 0.496); /* Light pink with 30% opacity */
   min-height: 100vh;
   justify-content: center;
+  text-align: center;
+  padding-top: 90px;
 }
 
 .rec-carousel-wrapper {

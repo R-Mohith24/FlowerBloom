@@ -7,7 +7,7 @@ const Gallery = () => {
 
     <>
       <div className="gallery-container">
-        <Carousel cols={2} rows={1} loop>
+        <Carousel cols={2} rows={1} loop autoplay={2000}>
           <Carousel.Item>
             <img src='https://i.pinimg.com/736x/42/57/74/425774f7602fb65cd57596d51a560dd5.jpg' height="300px" width="400px" ></img>
           </Carousel.Item>
