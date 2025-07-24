@@ -10,6 +10,7 @@ const Home = () => {
         <p>Where you can find the best flowers for your special occasions
           and bloom your life with it 
         </p>
+        <button className="shop-button">SHOP HERE!</button>
       </div>
     </div>
     </>
