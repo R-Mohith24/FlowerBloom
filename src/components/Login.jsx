@@ -1,5 +1,6 @@
 import React from 'react';
 import './Auth.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -11,7 +12,7 @@ const Login = () => {
           <input type="password" placeholder="Password" required />
           <button type="submit">Login</button>
         </form>
-        <p className="auth-note">Don't have an account? Sign up now!</p>
+        <p className="auth-note">Don't have an account? <Link to='/SignUp'><i>Sign up now!</i></Link></p>
       </div>
     </div>
   );

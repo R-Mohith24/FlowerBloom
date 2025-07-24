@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Auth.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -30,14 +30,16 @@ const SignUp = () => {
       return;
     }
 
-    // Store in localStorage
+    // ✅ Store user data and login status in localStorage
     localStorage.setItem('name', fullName);
+    localStorage.setItem('email', email);
     localStorage.setItem('password', password);
+    localStorage.setItem('isLoggedIn', 'true');
 
     console.log('User signed up:', formData);
 
-    // Navigate to login
-    navigate('/login');
+    // ✅ Navigate to login page
+    navigate('/Gallery');
   };
 
   return (
@@ -79,7 +81,7 @@ const SignUp = () => {
           />
           <button type="submit">Sign Up</button>
         </form>
-        <p className="auth-note">Already have an account? Login now!</p>
+        <p className="auth-note">Already have an account? <Link to ='/login'><i>Login now!</i></Link></p>
       </div>
     </div>
   );
