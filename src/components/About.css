@@ -1,0 +1,31 @@
+.about-container {
+  padding: 90px 20px 40px;
+  background-color: rgb(236, 212, 232); /* soft pastel background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-card {
+  background-color: rgba(0,0,0,0.3);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0);
+  max-width: 800px;
+  color: #ff0000;
+  line-height: 1.6;
+}
+
+.about-card h2 {
+  color: #ff00e6e4;
+  font-size: 36px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  font-size: 16px;
+  color: #ffffff;
+}
