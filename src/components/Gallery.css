@@ -1,0 +1,39 @@
+.gallery-container {
+  padding: 40px 20px;
+  background-color: #201f20; /* Dark background for contrast */
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.rec-carousel-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Each carousel item styled as a card */
+.rec-item-wrapper img {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.rec-item-wrapper img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Optional: tweak carousel arrows */
+.rec.rec-arrow {
+  background-color: #252222 !important;
+  color: #fff !important;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.rec.rec-arrow:hover {
+  background-color: #555 !important;
+}
